@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.layout {
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border-left: 0.125em solid #000000;
+  border-right: 0.125em solid #000000;
+}
+
+/* --- Barra de navegacion --- */
+.navBar {
+  padding: 1.2em;
+  border-bottom: 0.125em solid #000000;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 0.8em;
+}
+
+.navItem {
+  font-size: 1.4em;
+}
+
+.navLink {
+  color: #000000;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.navSeparator {
+  font-size: 1.4em;
+}
+
+/* --- Contenido principal--- */
+.mainContent {
+  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.pageTitle {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+/* --- Recetas --- */
+.recipeCard {
+  border: 0.125em solid #000000;
+  border-top-left-radius: 4em;
+  border-bottom-right-radius: 4em;
+  padding: 1.5em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+.recipeTitle {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.imgBox {
+  width: 60%;
+  height: 18em;
+  margin: 0 auto;
+  border: 0.125em solid #000000;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipeImg {
+  width: 60%;
+  height: 18em;
+  margin: 0 auto;
+  object-fit: cover;
+  border: 0.125em solid #000000;
+}
+
+.stepsTitle {
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+.stepsList {
+  padding-left: 2.5em;
+}
+
+.stepItem {
+  font-size: 1.05em;
+  line-height: 1.5;
+  margin-bottom: 0.4em;
+}
+
+/* --- Pie de pagina --- */
+.footerBar {
+  padding: 1.2em;
+  border-top: 0.125em solid #000000;
+}
+
+.footerText {
+  font-size: 1.1em;
+  text-align: center;
+}
+
+/* --- Vista de contacto --- */
+.contactCard {
+  width: 100%;
+  padding: 2.5em;
+  border: 0.125em solid #000000;
+  background-color: #ededed;
+}
+
+.contactTitle {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.formRow {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.formLabel {
+  width: 6em;
+  font-size: 1.1em;
+}
+
+.formInput {
+  width: 15em;
+  font-size: 1em;
+  padding: 0.4em;
+  border: 0.0625em solid #666;
+}
+
+.formTextarea {
+  width: 25em;
+  height: 7em;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.4em;
+  border: 0.0625em solid #666;
+}
+
+/* --- Botones --- */
+.formActions {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 1.5em;
+}
+
+.formButton {
+  font-size: 1.1em;
+  padding: 0.5em 2.5em;
+  border: 0.0625em solid #000000;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.buttonSend {
+  background-color: #cfe0f5;
+}
+
+.buttonCancel {
+  background-color: #f5d3d3;
+}

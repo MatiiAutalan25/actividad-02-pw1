@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2 - Contacto</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <!-- Barra de navegación -->
+      <nav class="navBar">
+        <ul class="navList">
+          <li class="navItem">
+            <a class="navLink" href="./index.html">HOME</a>
+          </li>
+          <li class="navSeparator">|</li>
+          <li class="navItem">
+            <a class="navLink" href="./contacto.html">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Contenido principal -->
+      <main class="mainContent">
+        <section class="contactCard">
+          <h1 class="contactTitle">Contacto</h1>
+
+          <form action="#" method="post">
+            <div class="formRow">
+              <label class="formLabel" for="nombre">Nombre:</label>
+              <input
+                class="formInput"
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+              />
+            </div>
+
+            <div class="formRow">
+              <label class="formLabel" for="email">E-mail:</label>
+              <input
+                class="formInput"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+
+            <div class="formRow">
+              <label class="formLabel" for="telefono">Tel:</label>
+              <input
+                class="formInput"
+                type="tel"
+                id="telefono"
+                name="telefono"
+                required
+              />
+            </div>
+
+            <div class="formRow">
+              <label class="formLabel" for="mensaje">Mensaje:</label>
+              <textarea
+                class="formTextarea"
+                id="mensaje"
+                name="mensaje"
+                required
+              ></textarea>
+            </div>
+
+            <div class="formActions">
+              <input
+                class="formButton buttonSend"
+                type="submit"
+                value="Enviar"
+              />
+              <input
+                class="formButton buttonCancel"
+                type="reset"
+                value="Cancelar"
+              />
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <!-- Pie de página -->
+      <footer class="footerBar">
+        <p class="footerText">Todos los derechos reservados</p>
+      </footer>
+    </div>
+  </body>
+</html>
