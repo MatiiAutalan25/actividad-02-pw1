@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 80vw;
+  min-height: 100vh;
+  box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.15);
+  padding: 3em 4em;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+/* --- Información Personal --- */
+.personalInformation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.personalData {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+.dataText {
+  font-size: 1.25em;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.personalImg {
+  width: 14em;
+  height: 12em;
+  object-fit: cover;
+  border-radius: 1.5em;
+  border: 0.06em solid #000000;
+}
+
+/* --- Secciones Generales --- */
+.sectionBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+/* --- Listas Generales --- */
+.infoList {
+  padding-left: 2em;
+}
+
+.listItem {
+  font-size: 1.1em;
+  margin-bottom: 0.3em;
+}
+
+/* --- Modificadores de Sublistas --- */
+.subList {
+  padding-left: 2em;
+  margin-top: 0.3em;
+}
+
+.subListItem {
+  list-style-type: circle;
+}
+
+/* --- Paginas de detalle --- */
+.detailHeader {
+  padding-bottom: 0.75em;
+  border-bottom: 0.125em solid #000000;
+}
+
+.detailTitle {
+  font-size: 1.8em;
+}
+
+.detailBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
+
+.detailSubtitle {
+  font-size: 1.4em;
+}
+
+.detailBlockTitle {
+  font-size: 1.15em;
+}
+
+.detailDates {
+  font-size: 1em;
+  font-style: italic;
+}
+
+.detailText {
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+
+/* --- Mapa de ubicacion --- */
+.mapFrame {
+  width: 100%;
+  height: 25em;
+  border: 0.125em solid #000000;
+}
+
+/* --- Imagenes de la institucion --- */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+.imgBox {
+  width: 20em;
+  height: 14em;
+  border: 0.125em solid #000000;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.galleryImg {
+  width: 20em;
+  height: 14em;
+  object-fit: contain;
+  border: 0.125em solid #000000;
+}
